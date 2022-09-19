@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2? family=Oxygen:wght@300;400;700&display=swap");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    font-family: Oxygen, sans-serif;
+    margin: 2rem;
+}
+
+.home {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem)); */
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.card {
+    overflow: hidden;
+    box-shadow: 0 2px 20px #e1e5ee;
+    /* border-radius: 0.2rem; */
+    display: flex;
+    padding: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+    margin-top: 138px;
+    margin-left: 226px;
+    margin-bottom: 211px;
+}
+
+.card_body {
+    justify-content: center;
+    width: 500px;
+    margin: auto;
+    border: 5px solid black;
+}
+
+.card__img {
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card__title {
+    padding: 1rem;
+}
+
+.card__description {
+    padding: 0 1rem;
+}
+
+.card__price {
+    padding: 1rem;
+}
+
+.card :hover {
+    transform: scale(1.02);
+}
+
+.card:hover .card__btn {
+    background: #00d57c;
+    color: white;
+}
+
+.card__btn {
+    padding: 0rem;
+    width: 30px;
+    height: 20px;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1rem;
+    border: 2px solid #d50000;
+    color: #0e0101;
+    border: 0.2rem;
+    transition: background 200ms ease-in, color 200ms ease-in;
+}
+
+.display {
+    width: 30px;
+    height: 20px;
+}
+
+.main_card {
+    float: left;
+    display: flex;
+    padding: 1.5rem;
+    width: 100vw;
+    height: 88vh;
+}
+
+.print_cart {
+    height: 10vh;
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer {
+    position: fixed;
+    left: 40rem;
+    top: 50rem;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+}
+
+.cart_addBtn{
+    margin-top: 41rem;
+    margin-left: -47rem;
+}
+
+.cart_header{
+    margin-right: -206px;
+    margin-top: -17px;
+    margin-left: 109px;
+}
